@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>写真集</title>
+    <meta name="description" content="ホームページです">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+ 
+<!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+<!-- favicon -->
+    <meta name="msapplication-config" content="./browserconfig.xml" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#f5deb3">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="images/1_P.png.svg" color="#555" />
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="manifest" href="images/manifest.json">
+  </head>
+
+  <body>
+  <div class='wrapper'>
+<!-- HEADER ------------------------------------------------------------------------------------------------------------ -->
+    <header>
+      <!-- headlogo and language -->
+        <div id='logoandlang'>
+          <div id='headtitle'>
+            <a href=index.html id='title'>
+              <img src='images/logo2.jpg' alt='logo'>
+            </a>            
+          </div>
+
+          <div id="lang1">
+            <a href=index_eng.html>
+              <div id="lang">English</div>
+            </a>
+          </div>
+        </div>
+      <!-- navigation bar -->
+        <nav class="nvgt">
+          <ul>
+            <li><a href=index.html>トップページ</a></li>
+            <li><a href=profile.html>自己紹介</a></li>
+            <li><a href=hobby.html>趣味</a></li>
+            <li class="current"><a href=photo.html>写真集</a></li>
+            <li><a href=other.html>その他</a></li>
+          </ul>
+        </nav>
+      <!-- hamburger menu -->
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <div class="menu-content">
+            <ul>
+              <li><a href=index.html>トップページ</a></li>
+              <li><a href=profile.html>自己紹介</a></li>
+              <li><a href=hobby.html>趣味</a></li>
+              <li  class='current'><a href=photo.html>写真集</a></li>
+              <li><a href=other.html>その他</a></li>
+            </ul>
+          </div>
+        </div>
+      <!-- breadcrumb -->
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="index.html">
+                <span itemprop="name">トップページ</span>
+            </a>
+            <meta itemprop="position" content="1" />
+          </li>
+          <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+            <a itemprop="item" href="photo.html">
+                <span itemprop="name">写真集</span>
+            </a>
+            <meta itemprop="position" content="2" />
+          </li>
+          
+            <!-- <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+              <a itemprop="item" href="カテゴリー2のURL">
+                  <span itemprop="name">カテゴリー2</span>
+              </a>
+              <meta itemprop="position" content="3" />
+            </li> -->
+        </ol>
+    </header>
+<!-- MAIN ------------------------------------------------------------------------------------------------------------ -->
+    <main>
+        <section>
+          <h1>写真集</h1>
+          <li><a href="travel.html">旅行</a></li>
+          <li><a href="apex.html">Apex</a></li>
+        </section>
+    </main>
+<!-- FOOTER ------------------------------------------------------------------------------------------------------------ -->
+    <footer>
+      <p>Copyrights © ハルキホームページ All Rights Reserved.</p>
+    </footer>
+</div>
+</body>
+</html>

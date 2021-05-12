@@ -3,7 +3,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8">
-    <title>ハルキホームページ</title>
+    <title>趣味</title>
     <meta name="description" content="ホームページです">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
  
@@ -21,33 +21,36 @@
     <link rel="manifest" href="images/manifest.json">
   </head>
 
-  <body>
-    <div id='wrapper'>
-      <header>
-        <div id='logoandlang'>
-            <div id='headtitle'>
-             <a href=index.html id='title'>
-              <img src='images/logo2.jpg' alt='logo'>
-             </a>            
-            </div>
-            <div id="lang1">
-             <a href=index_eng.html>
-              <div id="lang">English</div>
-             </a>
-            </div>
+<body>
+<div class='wrapper'>
+<!-- HEADER------------------------------------------------------------------------------------------------------------------------------------- -->
+  <header>
+    <!-- HEADLOGO AND LANGUAGE -->
+    <div id='logoandlang'>
+        <div id='headtitle'>
+            <a href=index.html id='title'>
+             <img src='images/logo2.jpg' alt='logo'>
+            </a>            
         </div>
-        
-        <nav class="nvgt">
+
+        <div id="lang1">
+            <a href=index_eng.html>
+              <div id="lang">English</div>
+            </a>
+        </div>
+    </div>
+    <!-- NAVIGATION BAR -->
+          <nav class="nvgt">
             <ul>
-            <li class='current'><a href=index.html>トップページ</a></li>
+            <li><a href=index.html>トップページ</a></li>
             <li><a href=profile.html>自己紹介</a></li>
-            <li><a href=hobby.html>趣味</a></li>
+            <li class="current"><a href=hobby.html>趣味</a></li>
             <li><a href=photo.html>写真集</a></li>
             <li><a href=other.html>その他</a></li>
             </ul>
-        </nav>
-
-        <div class="hamburger-menu">
+          </nav>
+    <!-- HAMBURGER MENU -->
+          <div class="hamburger-menu">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="menu-content">
@@ -59,9 +62,9 @@
                     <li><a href=other.html>その他</a></li>
                 </ul>
             </div>
-        </div>
-
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+          </div>
+    <!-- BREADCRUMB -->
+          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
             <li itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
               <a itemprop="item" href="index.html">
@@ -69,48 +72,54 @@
               </a>
               <meta itemprop="position" content="1" />
             </li>
-<!--           
+          
             <li itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="カテゴリー1のURL">
-                  <span itemprop="name">カテゴリー1</span>
+              <a itemprop="item" href="hobby.html">
+                  <span itemprop="name">趣味</span>
               </a>
               <meta itemprop="position" content="2" />
             </li>
           
-            <li itemprop="itemListElement" itemscope
+            <!-- <li itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
               <a itemprop="item" href="カテゴリー2のURL">
                   <span itemprop="name">カテゴリー2</span>
               </a>
               <meta itemprop="position" content="3" />
             </li> -->
-        </ol>
-          
-     </header>
+          </ol>
 
-     <main>
-         <section>
-            <img src='images/night.jpg' id="top">
-         </section>
-
-         <section>
-            <h1>トップページ</h1>
-            <h2>ここはトップページです。</h2>
-            <p>ステイホームで暇なので，HTMLの勉強を始めました。宜しくお願い致します。</p>
-            <h1>お知らせ</h1>
-            <p><b>2021年4月20日</b>&emsp;ホームページの作成を始めました。</p>
-         </section>
-     </main>
-
-     <footer>
-        <p>Copyrights © ハルキホームページ All Rights Reserved.</p>
-     </footer>
-    </div>
- </body>
+    </header>
+<!-- MAIN------------------------------------------------------------------------------------------------------------------------------------- -->
+    <main>
+      <section>
+        <img src='images/night.jpg' id="top">
+      </section>
+      <section>
+                 <h1>趣味</h1>
+                 <h2>音楽</h2>
+                   <li>GReeeN</li>
+                   <li>BUMP OF CHIKIN</li>
+                 <h2>アニメ・漫画</h2>
+                   <li>進撃の巨人</li>
+                   <li>ONE PIECE</li>
+                   <li>うえきの法則</li>
+                   <li>ジョジョ</li>
+                   <li>ワンパンマン</li>
+                 <h2>スポーツ</h2>
+                   <li>サッカー</li>
+                   <li>筋トレ</li>
+                 <h2>ゲーム</h2>
+                   <li>ポケモン</li>
+                   <li>バイオハザード</li>
+                   <li>Apex</li>
+      </section>
+    </main>
+<!-- FOOTER------------------------------------------------------------------------------------------------------------------------------------- -->
+    <footer>
+         <p>Copyrights © ハルキホームページ All Rights Reserved.</p>
+    </footer>
+</div>
+</body>
 </html>
-
-<!-- memo
-h1とh2のデザイン 自己紹介の子要素
-
--->
