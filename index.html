@@ -1,15 +1,15 @@
-  
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <title>ハルキホームページ</title>
     <meta name="description" content="ホームページです">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
- 
-<!-- CSS -->
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-<!-- favicon -->
+    <!-- favicon -->
     <meta name="msapplication-config" content="./browserconfig.xml" />
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
@@ -19,57 +19,66 @@
     <link rel="mask-icon" href="images/1_P.png.svg" color="#555" />
     <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
     <link rel="manifest" href="images/manifest.json">
-  </head>
+</head>
 
-  <body>
+<body>
     <div id='wrapper'>
-      <header>
-        <div id='logoandlang'>
-            <div id='headtitle'>
-             <a href=index.html id='title'>
-              <img src='images/logo2.jpg' alt='logo'>
-             </a>            
-            </div>
-            <div id="lang1">
-             <a href=index_eng.html>
-              <div id="lang">English</div>
-             </a>
-            </div>
-        </div>
-        
-        <nav class="nvgt">
-            <ul>
-            <li class='current'><a href=index.html>トップページ</a></li>
-            <li><a href=profile.html>自己紹介</a></li>
-            <li><a href=hobby.html>趣味</a></li>
-            <li><a href=photo.html>写真集</a></li>
-            <li><a href=other.html>その他</a></li>
-            </ul>
-        </nav>
+        <header>
+            <div id='hdinner'>
+                <div id='headtitle'>
+                    <a href=index.html id='title'>
+                        <img src='images/logo2.jpg' alt='logo'>
+                    </a>
+                </div>
 
-        <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <div class="menu-content">
+                <div id="langbox">
+                    <a href=index_eng.html>
+                        <div id="lang">English</div>
+                    </a>
+                </div>
+
+                <div class="hamburger-menu">
+                    <input type="checkbox" id="menu-btn-check">
+                    <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                    <!--ここからメニュー-->
+                    <div class="menu-content">
+                        <ul>
+                            <li>
+                                <a href="index.html">トップページ</a>
+                            </li>
+                            <li>
+                                <a href="hobby.html">趣味</a>
+                            </li>
+                            <li>
+                                <a href="photo.html">写真集</a>
+                            </li>
+                            <li>
+                                <a href="other.html">その他</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--ここまでメニュー-->
+                </div>
+            </div>
+            <nav class="nvgt">
                 <ul>
-                    <li><a href=index.html>トップページ</a></li>
-                    <li class='current'><a href=profile.html>自己紹介</a></li>
+                    <li class='current'><a href=index.html>トップページ</a></li>
                     <li><a href=hobby.html>趣味</a></li>
                     <li><a href=photo.html>写真集</a></li>
                     <li><a href=other.html>その他</a></li>
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
 
-        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope
-                itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="index.html">
-                  <span itemprop="name">トップページ</span>
-              </a>
-              <meta itemprop="position" content="1" />
-            </li>
-<!--           
+        <main>
+            <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                    <a itemprop="item" href="index.html">
+                        <span itemprop="name">トップページ</span>
+                    </a>
+                    <meta itemprop="position" content="1" />
+                </li>
+                <!--           
             <li itemprop="itemListElement" itemscope
                 itemtype="https://schema.org/ListItem">
               <a itemprop="item" href="カテゴリー1のURL">
@@ -85,29 +94,53 @@
               </a>
               <meta itemprop="position" content="3" />
             </li> -->
-        </ol>
-          
-     </header>
+            </ol>
+            <section>
+                <img src='images/night.jpg' id="top">
+            </section>
 
-     <main>
-         <section>
-            <img src='images/night.jpg' id="top">
-         </section>
+            <section>
+                <h1>トップページ</h1>
+                <h2>ここはトップページです。</h2>
+                <p>ステイホームで暇なので，HTMLの勉強を始めました。宜しくお願い致します。</p>
+                <h1>自己紹介</h1>
+                <p>都内に通う理系大学生です。</p>
+                <p>宜しくお願い致します。</p>
+                <h2>基礎データ</h2>
+                <table>
+                    <colgroup span="4"></colgroup>
+                    <tr>
+                        <th>国籍</th>
+                        <th>身長</th>
+                        <th>体重</th>
+                        <th>性別</th>
+                    </tr>
+                    <tr>
+                        <td>日本</td>
+                        <td>165cm</td>
+                        <td>48kg</td>
+                        <td>男</td>
+                    </tr>
+                </table>
+                <h2>好きな色</h2>
+                <p>オレンジ，黄色，緑色</p>
+                <h2>好きな食べ物</h2>
+                <p>バナナ，寿司，納豆，牛乳</p>
+                <h2>嫌いな食べ物</h2>
+                <p>辛い食べ物，オクラ，ミョウガ</p>
+                <h1>お知らせ</h1>
+                <p><b>2021年4月20日</b>&emsp;ホームページの作成を始めました。</p>
+                <P><b>2021年5月12日</b>&emsp;ホームページを公開しました。</P>
+            </section>
+        </main>
 
-         <section>
-            <h1>トップページ</h1>
-            <h2>ここはトップページです。</h2>
-            <p>ステイホームで暇なので，HTMLの勉強を始めました。宜しくお願い致します。</p>
-            <h1>お知らせ</h1>
-            <p><b>2021年4月20日</b>&emsp;ホームページの作成を始めました。</p>
-         </section>
-     </main>
-
-     <footer>
-        <p>Copyrights © ハルキホームページ All Rights Reserved.</p>
-     </footer>
+        <footer>
+            <p>ハルキホームページ</p>
+            <p>©HarukiHomepage.</p>
+        </footer>
     </div>
- </body>
+</body>
+
 </html>
 
 <!-- memo
