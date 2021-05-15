@@ -38,6 +38,7 @@ section {
 
 footer {
   position: absolute;
+  margin:0 auto;
   margin-bottom: -60px;
   bottom: 0;
   height: 90px;
