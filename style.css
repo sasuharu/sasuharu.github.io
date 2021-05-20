@@ -153,6 +153,7 @@ header {
 #headtitle {
   max-width: 60%;
   max-height: 60px;
+  padding-left: 5px;
 }
 
 #title img {
@@ -161,21 +162,9 @@ header {
 }
 
 #langbox {
+  margin-right: 45px;
   text-align: right;
   width: 25%;
-}
-
-#lang {
-  width: 80%;
-  height: 30%;
-  background: white;
-  text-align: center;
-  padding: 5px 5px;
-  border: solid black;
-  border-radius: 5px;
-  border-width: 2px;
-  margin-bottom: 5px;
-  margin-right: 5px;
 }
 
 #langimg {
@@ -190,16 +179,17 @@ header {
 /* ハンバーガーメニュー */
 
 .menu-btn {
-  top: 0px;
+  top: 10px;
   right: 10px;
   display: flex;
   height: 40px;
   width: 40px;
   justify-content: center;
   align-items: center;
-  z-index: 90;
+  z-index: 100;
   /*重なりの順序 大きいほど手前に来る*/
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0);
+  position:absolute;
 }
 
 .menu-btn span, .menu-btn span:before, .menu-btn span:after {
@@ -265,7 +255,7 @@ header {
   width: 100%;
   font-size: 15px;
   box-sizing: border-box;
-  color: #ffffff;
+  color: black;
   text-decoration: none;
   padding: 9px 15px 10px 0;
   position: relative;
@@ -289,14 +279,18 @@ header {
   left: 0;
   /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   transition: all 0.5s;
   /*アニメーション設定*/
 }
 
 #menu-btn-check:checked~.menu-content {
-  top: 60px;
+  top: 0px;
   /*メニューを画面内へ*/
+}
+
+#back:checked~.menu-content{
+  top:100%;
 }
 
 /* パンくずリスト */
@@ -394,12 +388,7 @@ header {
   p {
     font-size: 1.0rem;
   }
-  nav ul li.current {
-    background-color: darkseagreen;
-  }
-  nav ul li.current>a {
-    color: white;
-  }
+
   nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -411,11 +400,11 @@ header {
   }
   nav li {
     display: block;
+    box-sizing: border-box;
     width: 25%;
     margin-bottom: 10px;
     background-color: whitesmoke;
-    border-bottom: dotted 1px skyblue;
-    border-top: skyblue;
+    border: 2px solid whitesmoke;
   }
   nav a {
     display: block;
@@ -427,12 +416,15 @@ header {
     font-size: 1.0rem;
   }
   nav li:hover {
-    background-color: darkseagreen;
+    border: 2px solid darkseagreen;
   }
   nav li>a:hover {
-    color: white;
+    color: #555;
   }
   .mob_br {
     display: none;
+  }
+  nav li.current{
+    background-color: darkseagreen;
   }
 }
