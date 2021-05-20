@@ -30,6 +30,10 @@ section {
   height: 100%;
 }
 
+section img{
+  width:100%;
+}
+
 /* footerのスタイル */
 
 .push {

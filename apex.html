@@ -1,110 +1,162 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <title>Apex</title>
-    <meta name="description" content="ホームページです">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
- 
-<!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-<!-- favicon -->
-    <meta name="msapplication-config" content="./browserconfig.xml" />
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#f5deb3">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
-    <link rel="mask-icon" href="images/1_P.png.svg" color="#555" />
-    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
-    <link rel="manifest" href="images/manifest.json">
-  </head>
 
-  <body>
-<div class='wrapper'>
-      
+<head>
+  <meta charset="UTF-8">
+  <title>Apex</title>
+  <meta name="description" content="ホームページです">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=yes">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- favicon -->
+  <meta name="msapplication-config" content="./browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#f5deb3">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon-180x180.png">
+  <link rel="mask-icon" href="images/1_P.png.svg" color="#555" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+  <link rel="manifest" href="images/manifest.json">
+</head>
+
+<body>
+  <div id='wrapper'>
     <header>
-        <div id='logoandlang'>
-            <div id='headtitle'>
-                <a href=index.html id='title'>
-                <img src='images/logo2.jpg' alt='logo'>
-                </a>            
-            </div>
-    
-            <div id="lang1">
-                <a href=index_eng.html>
-                    <div id="lang">English</div>
-                </a>
-            </div>
+      <div id='hdinner'>
+        <div id='headtitle'>
+          <a href=index.html id='title'>
+            <img src='images/logo.jpg' alt='logo'>
+          </a>
         </div>
-        
-          <nav class="nvgt">
+
+        <div id="langbox">
+          <a href=index_eng.html id='langimg'>
+            <img src='images/lang.jpg' alt='english'>
+          </a>
+        </div>
+
+        <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
             <ul>
-            <li><a href=index.html>トップページ</a></li>
-            <li><a href=profile.html>自己紹介</a></li>
-            <li><a href=hobby.html>趣味</a></li>
-            <li class="current"><a href=photo.html>写真集</a></li>
-            <li><a href=other.html>その他</a></li>
+              <li>
+                <a href="index.html">トップページ</a>
+              </li>
+              <li>
+                <a href="hobby.html">趣味</a>
+              </li>
+              <li>
+                <a href="photo.html">写真集</a>
+              </li>
+              <li>
+                <a href="other.html">その他</a>
+              </li>
             </ul>
-          </nav>
-          <!-- パンくずリスト -->
-
-          <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <div class="menu-content">
-                <ul>
-                    <li><a href=index.html>トップページ</a></li>
-                    <li class='current'><a href=profile.html>自己紹介</a></li>
-                    <li><a href=hobby.html>趣味</a></li>
-                    <li><a href=photo.html>写真集</a></li>
-                    <li><a href=other.html>その他</a></li>
-                </ul>
-            </div>
           </div>
-
-          <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li itemprop="itemListElement" itemscope
-                itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="index.html">
-                  <span itemprop="name">トップページ</span>
-              </a>
-              <meta itemprop="position" content="1" />
-            </li>
-          
-            <li itemprop="itemListElement" itemscope
-                itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="photo.html">
-                  <span itemprop="name">写真集</span>
-              </a>
-              <meta itemprop="position" content="2" />
-            </li>
-          
-            <li itemprop="itemListElement" itemscope
-                itemtype="https://schema.org/ListItem">
-              <a itemprop="item" href="apex.html">
-                  <span itemprop="name">Apex</span>
-              </a>
-              <meta itemprop="position" content="3" />
-            </li>
-          </ol>
-
-    </header>
-
-    <div class='contents'>
-
-        <div class='main'>
-                 <h1>Apex</h1>
-                 <h2>チャンピオン集</h2>
-                 <p>準備中…</p> 
+          <!--ここまでメニュー-->
         </div>
+      </div>
+      <nav class="nvgt">
+        <ul>
+          <li class='current'><a href=index.html>トップページ</a></li>
+          <li><a href=hobby.html>趣味</a></li>
+          <li><a href=photo.html>写真集</a></li>
+          <li><a href=other.html>その他</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="index.html">
+            <span itemprop="name">トップページ</span>
+          </a>
+          <meta itemprop="position" content="1" />
+        </li>
 
-    </div>
-</div>
-<footer>
-    <p>Copyrights © ハルキホームページ All Rights Reserved.</p>
-</footer>
+        <li itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="photo.html">
+              <span itemprop="name">写真集</span>
+          </a>
+          <meta itemprop="position" content="2" />
+        </li>
+      
+        <li itemprop="itemListElement" itemscope
+            itemtype="https://schema.org/ListItem">
+          <a itemprop="item" href="apex.html">
+              <span itemprop="name">Apex</span>
+          </a>
+          <meta itemprop="position" content="3" />
+        </li> -->
+      </ol>
+
+      <section>
+        <h1>Apex</h1>
+        <h2>チャンピオン集</h2>
+        <img src="images/20210211191914_1.jpg" ,alt=20210211191914_1.jpg>
+        <img src="images/20210211191915_1.jpg" ,alt=20210211191915_1.jpg>
+        <img src="images/20210211191916_1.jpg" ,alt=20210211191916_1.jpg>
+        <img src="images/20210215020734_1.jpg" ,alt=20210215020734_1.jpg>
+        <img src="images/20210216030608_1.jpg" ,alt=20210216030608_1.jpg>
+        <img src="images/20210216030609_1.jpg" ,alt=20210216030609_1.jpg>
+        <img src="images/20210216030609_2.jpg" ,alt=20210216030609_2.jpg>
+        <img src="images/20210216030610_1.jpg" ,alt=20210216030610_1.jpg>
+        <img src="images/20210218112556_1.jpg" ,alt=20210218112556_1.jpg>
+        <img src="images/20210218112558_1.jpg" ,alt=20210218112558_1.jpg>
+        <img src="images/20210218112559_1.jpg" ,alt=20210218112559_1.jpg>
+        <img src="images/20210220051621_1.jpg" ,alt=20210220051621_1.jpg>
+        <img src="images/20210220051622_1.jpg" ,alt=20210220051622_1.jpg>
+        <img src="images/20210220051622_2.jpg" ,alt=20210220051622_2.jpg>
+        <img src="images/20210220051628_1.jpg" ,alt=20210220051628_1.jpg>
+        <img src="images/20210226011542_1.jpg" ,alt=20210226011542_1.jpg>
+        <img src="images/20210228002105_1.jpg" ,alt=20210228002105_1.jpg>
+        <img src="images/20210228003638_1.jpg" ,alt=20210228003638_1.jpg>
+        <img src="images/20210301175122_1.jpg" ,alt=20210301175122_1.jpg>
+        <img src="images/20210301181353_1.jpg" ,alt=20210301181353_1.jpg>
+        <img src="images/20210301233033_1.jpg" ,alt=20210301233033_1.jpg>
+        <img src="images/20210302161115_1.jpg" ,alt=20210302161115_1.jpg>
+        <img src="images/20210303040526_1.jpg" ,alt=20210303040526_1.jpg>
+        <img src="images/20210304022417_1.jpg" ,alt=20210304022417_1.jpg>
+        <img src="images/20210305003742_1.jpg" ,alt=20210305003742_1.jpg>
+        <img src="images/20210305005932_1.jpg" ,alt=20210305005932_1.jpg>
+        <img src="images/20210306045550_1.jpg" ,alt=20210306045550_1.jpg>
+        <img src="images/20210306045554_1.jpg" ,alt=20210306045554_1.jpg>
+        <img src="images/20210306045615_1.jpg" ,alt=20210306045615_1.jpg>
+        <img src="images/20210308132559_1.jpg" ,alt=20210308132559_1.jpg>
+        <img src="images/20210309023020_1.jpg" ,alt=20210309023020_1.jpg>
+        <img src="images/20210311103327_1.jpg" ,alt=20210311103327_1.jpg>
+        <img src="images/20210311170426_1.jpg" ,alt=20210311170426_1.jpg>
+        <img src="images/20210313132603_1.jpg" ,alt=20210313132603_1.jpg>
+        <img src="images/20210316121449_1.jpg" ,alt=20210316121449_1.jpg>
+        <img src="images/20210316222056_1.jpg" ,alt=20210316222056_1.jpg>
+        <img src="images/20210316222102_1.jpg" ,alt=20210316222102_1.jpg>
+        <img src="images/20210317023100_1.jpg" ,alt=20210317023100_1.jpg>
+        <img src="images/20210317155931_1.jpg" ,alt=20210317155931_1.jpg>
+        <img src="images/20210318153743_1.jpg" ,alt=20210318153743_1.jpg>
+        <img src="images/20210318172636_1.jpg" ,alt=20210318172636_1.jpg>
+        <img src="images/20210318172639_1.jpg" ,alt=20210318172639_1.jpg>
+        <img src="images/20210318172641_1.jpg" ,alt=20210318172641_1.jpg>
+        <img src="images/20210319010008_1.jpg" ,alt=20210319010008_1.jpg>
+        <img src="images/20210320022920_1.jpg" ,alt=20210320022920_1.jpg>
+        <img src="images/20210324154742_1.jpg" ,alt=20210324154742_1.jpg>
+        <img src="images/20210324193746_1.jpg" ,alt=20210324193746_1.jpg>
+        <img src="images/20210414021324_1.jpg" ,alt=20210414021324_1.jpg>
+      </section>
+    </main>
+
+    <footer>
+      <p class='ft'>Copyright©ハルキズホームページ.</p>
+    </footer>
+  </div>
 </body>
+
+</html>
+
 </html>
 
 <!-- memo
